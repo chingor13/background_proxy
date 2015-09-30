@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Instead of using your client instance, wrap that client instance in a background proxy. It will create new Thread(s) to handle writing to the client.
 
-```
+```ruby
 # example usage for writing messages to Kafka via the Poseidon gem
 client = Poseidon::Producer.new(...)
 proxy = BackgroundProxy::Proxy.new(client)
