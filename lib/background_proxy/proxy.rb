@@ -24,7 +24,7 @@ module BackgroundProxy
       end
     end
 
-    def respond_to_missing?(method)
+    def respond_to_missing?(method, include_private = false)
       client.respond_to?(method) || super
     end
 
