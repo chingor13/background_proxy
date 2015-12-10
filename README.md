@@ -35,6 +35,11 @@ Any message that the wrapped object can handle, the proxy will send through to t
 * These proxies do not currently clean themselves up until after the request finishes.
 * The clients need to be thread-safe or not have any kind of mutable state (that is mutated).
 
+## Changelog
+
+v0.1.1 - Fix respond_to_missing? (respond_to? won't crash)
+v0.1.0 - Initial release
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
